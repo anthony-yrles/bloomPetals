@@ -1,0 +1,120 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0.3% 4%;
+
+  /* margin: 5% 15%; */
+}
+
+.background {
+  width: 95%;
+  background-color: rgb(254, 238, 244);
+}
+
+header {
+  margin: 1%;
+}
+
+nav {
+  display: flex;
+  background-color: grey;
+  justify-content: space-evenly;
+  height: 50px;
+}
+
+nav article {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.vide {
+  width: 30%;
+}
+
+.recherche {
+  border: 0px;
+  background-color: white;
+  width: 30%;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  padding: 3%;
+  font-family: "Agbalumo", sans-serif;
+  font-size: 3em;
+}
+
+main {
+  max-height: 130%;
+  margin: 0% 4%;
+  color: darkgrey;
+  background-color: white;
+}
+
+.description {
+  text-align: center;
+  padding-bottom: 6%;
+}
+
+.groupe {
+  border-top: solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  margin: 3% 1%;
+  border: solid darkgray;
+  padding: 1%;
+}
+
+.service {
+  display: flex;
+  border-top: solid black;
+  justify-content: space-evenly;
+  padding: 2% 0%;
+}
+
+.checked {
+  display: flex;
+}
+.checked img {
+  border: none;
+  width: 20px;
+  object-fit: contain;
+}
+
+.checked h2 {
+  font-size: 1.3em;
+}
+
+.service a {
+  color: blue;
+  text-decoration: underline;
+}
+.service a img {
+  border: none;
+}
+
+.service article {
+  width: 30%;
+}
+
+footer {
+  background-color: grey;
+  height: 50px;
+}
