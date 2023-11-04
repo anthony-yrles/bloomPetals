@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BloomPetals contact</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/contact.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" crossorigin="anonymous">
+
+
+    <meta name="description" content="Présentation de l'entreprise BloomPetals">
+
+    <meta property="og:title" content="BloomsPetlas">
+    <meta property="og:description" content="Présentation de l'entreprise BloomPetals">
+    <meta property="og:image" content="images/fleur.png">
+    <meta property="og:url" content="index.html">
+    <meta property="og:type" content="CV">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="BloomsPetlas">
+    <meta name="twitter:description" content="Présentation de l'entreprise BloomPetals">
+    <meta name="twitter:image" content="images/fleur.png">
+
+    <meta property="og:title" content="BloomsPetlas">
+    <meta property="og:description" content="Présentation de l'entreprise BloomPetals">
+    <meta property="og:image" content="images/fleur.png">
+    <meta property="og:url" content="index.html">
+    <meta property="og:type" content="site_name">
+    <meta property="og:site_name" content="BloomsPetlas">
 </head>
+
 <body>
     <section class="background">
         <header>
@@ -25,5 +49,99 @@
                 <section class="recherche"></section>
             </nav>
         </header>
+        <main>
+            <h1>Contacter BloomPetals</h1>
+            <p class="description contact">Faites de votre prochain événement un moment inoubliable avec BloomPetals.
+                Laissez-nous
+                transformer votre espace en un véritable jardin de féerie, où chaque pétale raconte une
+                histoire d'amour, de bonheur et de célébration.
+            </p>
+            <ul class="fleur">
+                <li><span>Créativité Illimitée</span> : Nous repoussons les limites de la créativité pour concevoir des
+                    bouquets uniques et mémorables qui ajoutent une touche magique à votre
+                    événement.</li>
+                <li><span>Fleurs Fraîches et Durables</span> : Nous sélectionnons uniquement les fleurs les plus
+                    fraîches et de la plus haute qualité pour garantir la beauté de nos créations du début
+                    à la fin de votre fête.</li>
+                <li><span>Service Personnalisé</span> : Notre équipe dévouée est à votre écoute à chaque étape,
+                    offrant un service personnalisé pour répondre à vos besoins spécifiques et surpasser
+                    vos attentes.</li>
+                <li><span>Ponctualité et Professionnalisme</span> : Nous sommes fiers de notre ponctualité et de
+                    notre professionnalisme. Nous livrons nos créations à temps et installons chaque
+                    arrangement avec soin et précision.</li>
+            </ul>
+            <section>
+                <h2>Formulaire de contact</h2>
+                <form class="formulaire">
+                    <section class="civilite">
+                        <label for="civilite-select">Precisez votre civilité <br></label>
+                        <select name="civilite" id="civilite-select">
+                            <option valeur="mr">Monsieur</option>
+                            <option valeur="mme">Madame</option>
+                            <option valeur="aucun">Ne se prononce pas</option>
+                        </select>
+                    </section>
+
+                    <section class="prenom-nom">
+                        <article class="prenom-media-query">
+                            <label for="prenom">Prénom:</label><br>
+                            <input type="text" id="prenom" name="prenom">
+                        </article>
+                        <article class="nom-media-query">
+                            <label for="nom">Nom:</label><br>
+                            <input type="text" id="nom" name="nom">
+                        </article>
+                    </section>
+
+                    <fieldset class="adresse">
+                        <legend>Adresse :</legend>
+                        <section class="rue">
+                            <article>
+                                <label for="rue">Rue:</label><br>
+                                <input type="text" id="rue" name="rue">
+                            </article>
+                            <article>
+                                <label for="complement">Complement:</label><br>
+                                <input type="text" id="complement" name="complement">
+                            </article>
+                        </section>
+                        <section class="rue">
+                            <article>
+                                <label for="departement">Code Postal:</label><br>
+                                <input type="number" id="departement" name="departement">
+                            </article>
+                            <article>
+                                <label for="ville">Ville:</label><br>
+                                <input type="text" id="ville" name="ville">
+                            </article>
+                        </section>
+                        <section class="rue">
+                            <article>
+                                <label for="telephone">Telephone:</label><br>
+                                <input type="tel" id="telephone" name="telephone">
+                            </article>
+                            <article>
+                                <label for="mail">Mail:</label><br>
+                                <input type="email" id="mail" name="mail">
+                            </article>
+                        </section>
+                    </fieldset>
+                    <textarea id="commentaire" placeholder="Entrez votre commentaire en 800 lettres maximum..."
+                        maxlength="800" class="commentaire"></textarea>
+                    <section class="confidentialite">
+                        <p>Politique de confidantialité <br>
+                            Et natos cum sensu virtutis applicatione cogitatione sensus bestiis Quod earum quibusdam se
+                            cum
+                            amicitia amandi congruamus in eo cum cuius et et dirimi quae primum amoris ita amoris et
+                        </p>
+                        <input type="checkbox" id="politique" name="politique">
+                        <label for="politique">J'ai pris connaissance de la politique de confidentialité de
+                            l'entreprise</label>
+                    </section>
+                    <input type="submit" value="valider" class="bouton-valider">
+                </form>
+            </section>
+        </main>
+        <footer></footer>
     </section>
 </body>

@@ -1,0 +1,111 @@
+.description {
+  border-bottom: solid black;
+}
+
+.alice {
+  display: flex;
+  margin: 5%;
+  @media screen and (max-width: 900px) {
+    display: block;
+    text-align: center;
+  }
+}
+.alice-rhombus {
+  display: inline-block;
+  width: 200px;
+  height: 145px;
+  transform: rotate(23deg);
+  background-image: url(../images/equipe/photo1bis.jpg);
+  @media screen and (max-width: 900px) {
+    transform: rotate(0deg);
+  }
+}
+
+.alice-description {
+  padding: 3%;
+  width: 75%;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    padding: 0%;
+  }
+}
+
+.julien {
+  display: flex;
+  margin: 5%;
+  @media screen and (max-width: 900px) {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.julien-rhombus {
+  display: inline-block;
+  width: 200px;
+  height: 145px;
+  transform: rotate(23deg); /* Rotation pour former un losange */
+  background-image: url(../images/equipe/photo6bis.jpg);
+  @media screen and (max-width: 900px) {
+    transform: rotate(0deg);
+  }
+}
+
+.gridasse {
+  display: grid;
+  margin: 0% 2%;
+  padding-bottom: 10%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5%;
+
+  @media screen and (max-width: 750px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0%;
+    text-align: center;
+  }
+}
+
+.grid-description {
+  border-bottom: solid black;
+}
+
+.sofia-square {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(../images/equipe/photo3bis.jpg);
+  margin-left: 28%;
+  margin-bottom: 5%;
+  border-bottom: solid black;
+}
+
+.lea-square {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(../images/equipe/photo2bis.jpg);
+  margin-left: 28%;
+  margin-top: 5%;
+  border-bottom: solid black;
+}
+
+.camille-square {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(../images/equipe/photo4bis.jpg);
+  margin-left: 28%;
+  margin-bottom: 5%;
+  border-bottom: solid black;
+}
+
+.manon-square {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(../images/equipe/photo5bis.jpg);
+  margin-left: 28%;
+  margin-top: 5%;
+  border-bottom: solid black;
+}

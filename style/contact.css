@@ -1,0 +1,185 @@
+main {
+  padding: 0% 2%;
+}
+.contact {
+  padding-bottom: 3%;
+}
+.fleur {
+  list-style-type: none;
+  list-style-image: url(../images/fleurs.png);
+  list-style-position: inside;
+  margin: 0% 2%;
+}
+
+.fleur span {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+h2 {
+  color: black;
+  font-family: "Agbalumo", sans-serif;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 650px) {
+  .formulaire {
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 1fr 1fr 0.7fr 0.3fr;
+    grid-template-areas:
+      "civilite"
+      "prenom-media-query"
+      "nom-media-query"
+      "adresse"
+      "commentaire"
+      "confidentialite"
+      "bouton";
+  }
+}
+.formulaire {
+  border-radius: 8%;
+  background-color: rgb(254, 238, 244);
+  padding: 2%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-rows: 0.3fr 0.3fr 1fr 1fr 0.7fr 0.3fr;
+  grid-template-areas:
+    "civilite"
+    "prenom-nom"
+    "adresse"
+    "commentaire"
+    "confidentialite"
+    "bouton-valider";
+}
+
+.civilite {
+  grid-area: civilite;
+  width: 100%;
+  /* padding-left: 35%; */
+  height: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .civilite {
+    grid-area: civilite;
+    padding: 0%;
+  }
+}
+
+select {
+  color: darkgray;
+  background-color: white;
+  font-size: 16px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8%;
+  text-align: center;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("../images/fleurs.png") no-repeat right center;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  select {
+    width: 100px;
+    text-align: center;
+  }
+}
+
+.prenom-media-query {
+  grid-area: prenom-media-query;
+  margin: 15px;
+  height: 25px;
+  text-align: center;
+}
+
+.nom-media-query {
+  grid-area: nom-media-query;
+  margin: 15px;
+  height: 25px;
+  text-align: center;
+}
+.prenom-nom {
+  grid-area: prenom-nom;
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+}
+@media screen and (max-width: 650px) {
+  .prenom-nom {
+    display: block;
+  }
+}
+
+.adresse {
+  grid-area: adresse;
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 650px) {
+  .adresse {
+    grid-area: adresse;
+    margin-top: 2%;
+  }
+}
+
+.rue {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  padding: 1%;
+}
+@media screen and (max-width: 650px) {
+  .rue {
+    display: block;
+    height: 80px;
+    text-align: center;
+    padding: 0px;
+  }
+}
+
+.commentaire {
+  grid-area: commentaire;
+}
+
+@media screen and (max-width: 650px) {
+  .commentaire {
+    grid-area: commentaire;
+  }
+}
+
+.confidentialite {
+  grid-area: confidentialite;
+  border: ridge darkgray;
+  padding: 1%;
+  margin: 2% 0%;
+  text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .confidentialite {
+    grid-area: confidentialite;
+  }
+}
+.confidentialite p {
+  margin-bottom: 0.7%;
+}
+
+.bouton-valider {
+  grid-area: bouton-valider;
+  font-size: 1.2em;
+  width: 20%;
+  margin-left: 40%;
+  border-radius: 15%;
+}
+
+@media screen and (max-width: 650px) {
+  .bouton-valider {
+    grid-area: bouton-valider;
+  }
+}
